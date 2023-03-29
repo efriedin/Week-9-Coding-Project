@@ -4,17 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    
-    <div class="alert alert-primary" role="alert">
-        It works!
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Web Dev Creative</a></div>
+            <ul class="links">
+                <li><a href="about">Home</a></li>
+                <li><a href="gems">Gems</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Gems</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <main>
+       <section id="about">
+            <h1>Welcome</h1>
+            <p>
+                Dekalb is a relatively small city located 30 minutes from the West chicago <br />
+                suburbs. Our small oasis in the cornfields is home to many amazing local businesses for <br />
+                you to choose from. Consider this site your guide to the local food community.
+            </p>
+       </section> 
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark" 
+            : "fa-solid fa-bars" 
+        }
+    </script>
 
 </body>
 </html>

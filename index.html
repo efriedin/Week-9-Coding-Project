@@ -2,50 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gems</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#">Sister Cities</a></div>
+            <div class="logo"><a href="index.html">Sister Cities</a></div>
             <ul class="links">
-                <li><a href="about">Introducing Dekalb and Sycamore IL</a></li>
+                <li><a href="index.html">Introducing Dekalb and Sycamore</a></li>
                 <li><a href="Gems.html">Gems</a></li>
             </ul>
-            <a href="form.html" class="action_btn">Get Started</a>
+            <a href="form.html" class="action_btn">Submit your own local Gem</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="index.html">Introducing Dekalb</a></li>
+            <li><a href="index.html">Introducing Dekalb and Sycamore</a></li>
             <li><a href="Gems.html">Gems</a></li>
-            <li><a href="form.html" class="action_btn">Get Started</a></li>
+            <li><a href="form.html" class="action_btn">Submit Your Own Local Gems</a></li>
         </div>
     </header>
-
-    <main>
-        <div class="col-lg-12">
-            <section id="about">
-                <h1>Welcome to Dekalb and Sycamore IL</h1> <br />
-                <p>
-                    Together, Dekalb and Sycamore create a small oasis in the cornfields. <br />
-                    They are home to many amazing local food businesses not found anywhere else. <br />
-                    This site will be your guide to the local food community.
-                </p>
-            </section>
-        </div>
-    </main>
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
@@ -61,6 +49,17 @@
                 : "fa-solid fa-bars"
         }
     </script>
+
+    <main>
+        <section id="about">
+            <h1>Welcome to Dekalb and Sycamore IL</h1> <br />
+            <p>
+                Together, Dekalb and Sycamore create a small oasis in the cornfields. <br />
+                They are home to many amazing local food businesses not found anywhere else. <br />
+                This site will be your guide to the local food community.
+            </p>
+        </section>
+    </main>
 
     <div class="container">
         <div class="row">

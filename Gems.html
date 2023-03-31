@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gems</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .card img {
+            height: 280px;
+        }
+
+        .card-text {
+            height: 150px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!--NAVEBAR-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Dekalb, IL</a></div>
+            <ul class="links">
+                <li><a href="index.html">Introducing Dekalb</a></li>
+                <li><a href="Gems.html">Gems</a></li>
+            </ul>
+            <a href="form.html" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Introducing Dekalb</a></li>
+            <li><a href="Gems.html">Gems</a></li>
+            <li><a href="form.html" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+    </script>
+
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>Dekalb and Sycamore Hidden Gems</h1>
+            <hr />
+        </div>
+    </div>
+
+    <!--Row Grid-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNXQ_mCNLGSUQ-sNcUaVa7CP7osgrOng0xVuHLI=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Thai Pavillion</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Laid-back Thai restaurant serving satay, dumplings, salad, curry,
+                            noodle dishes & stir-fry.</p>
+                    </div>
+                    <div>
+                        <a href="https://thaipavilionskokie.com/indexMenu.php"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPssL6EmT4tNmSlq0SKYx6eSFv6YFXcZIA2w6WO=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>The Village</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Authentic Greek food</p>
+                    </div>
+                    <div>
+                        <a href="https://www.thevillageonstate.com/" class="btn btn-outline-primary float-right">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMGEemvNLeAhbHMS-kwtPkCX4oeTEesz_tNayDr=s680-w680-h510"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Ollies Frozen Custard</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>"Cozy hometown Frozen Custard stand with the heart of grandmas kitchen. Customize your treat
+                            with our impressive array of toppings, or browse a list of customer favorites with our
+                            "popular combos." Made fresh daily! If you want to enjoy at home, indulge in prepackaged
+                            pints and quarts to stuff your freezer."</p>
+                    </div>
+                    <div>
+                        <a href="https://olliesfrozencustard.com/" class="btn btn-outline-primary float-right">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNpRZvbOWT8wClKFXwj1EpKXUeXdhdGFRHIy1d_=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>HomeTown Sports Bar</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Bright, spacious sports bar decorated with team jerseys, offering sliders, karaoke & football
+                            on TV.</p>
+                    </div>
+                    <div>
+                        <a href="https://hometownsportsbar.com/index.html"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipO9kICA3e4jZUIMYXKikc-8C4p8XdtndwL7iZOm=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Buffalo's Grill</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Authentic Mexcian tacos, quesedillas, tortas and more!</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100054340219852"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPmLEYR5P_4w56Yqseo1WxCDXBpfBO6y1E0Jyj0=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Lothson's Karry Out</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Family Karry Out Restaurant. Frying the best chicken in the DeKalb, Il area since 1949.</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/lothsonskarryout/?paipv=0&eav=AfbR7wabtaKB2ffkIWDfmwF_ROgiRdXrQGW6-5_t6eEWrhKWCJRFivfECPDOaZmTi34&_rdr"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipORff4kMLEwd5xAyO9pM95iUEJDJ-Bznjz9z682=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Bea's Wok n Roll</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Vietnamese food in Dekalb, IL</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/BeasWokNRoll/"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPHUZvTAqHJrAA5ABI744ynmP3VtnZRcuaNQaIu=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Shawn's Coffee</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>We’re a full-service coffee house, also serving bagels, soups, and sandwiches.</p>
+                    </div>
+                    <div>
+                        <a href="https://shawnscoffeeshop.com/" class="btn btn-outline-primary float-right">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card mb-5 shadow-sm">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNhqQVysZuv-aBdGkCWWSQVif9J7ecNAXsOLoeu=s1360-w1360-h1020"
+                    class="img-fluid" />
+
+                <div class="card body">
+                    <div class="card-title">
+                        <h2>Egg Haven</h2>
+                    </div>
+                    <div class="card-text">
+                        <p>Straightforward, easygoing diner serving sandwiches & American breakfast favorites like
+                            omelets.</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/Egghavencafe/"
+                            class="btn btn-outline-primary float-right">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

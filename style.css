@@ -5,7 +5,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     background-color: #000;
     background-image: url('https://www.cityofdekalb.com/ImageRepository/Document?documentID=9839');
@@ -13,26 +13,26 @@ body{
     background-position: center;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
 
-a:hover{
+a:hover {
     color: orange;
 }
 
-header{
+header {
     position: relative;
     padding: 0 2rem;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -43,7 +43,7 @@ header{
 
 }
 
-.navbar .logo a{
+.navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -53,7 +53,7 @@ header{
     gap: 2rem;
 }
 
-.navbar .toggle_btn{
+.navbar .toggle_btn {
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -61,7 +61,7 @@ header{
 }
 
 
-.action_btn{
+.action_btn {
     background-color: rgb(174, 0, 255);
     color: #fff;
     padding: .5rem 1rem;
@@ -74,18 +74,18 @@ header{
     transition: scale .2 ease;
 }
 
-.action_btn:hover{
-    scale:1.05;
+.action_btn:hover {
+    scale: 1.05;
     color: #fff;
 }
 
-.action_btn:active{
+.action_btn:active {
     scale: .95;
 }
 
-.dropdown_menu{
+.dropdown_menu {
     display: none;
-    position:absolute;
+    position: absolute;
     right: 2rem;
     top: 60px;
     height: 0;
@@ -97,25 +97,25 @@ header{
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
     height: 240px;
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
     padding: .7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dropdown_menu .action_btn{
+.dropdown_menu .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 /* ABOUT */
-section#about{
+section#about {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -125,30 +125,41 @@ section#about{
     color: #fff;
 }
 
-#about h1{
+#about h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px) {
+
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn {
         display: none;
     }
 
-    .navbar .toggle_btn{
+    .navbar .toggle_btn {
         display: block;
     }
 
-    .dropdown_menu{
+    .dropdown_menu {
         display: block;
     }
 }
 
 @media(max-width: 576px) {
-    .dropdown_menu{
+    .dropdown_menu {
         left: 2rem;
         width: unset;
     }
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    background-color: rgba(182, 174, 218, 0.5);
 }

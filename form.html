@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body>
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask?</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
+
+                        <label for="name" class="form-label">name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="e.g Mario">
+
+                        <label for="subject" class="form-label">What is your question</label>
+                        <select class="form-select" id="subject">
+                            <option value="pricing" selected>Pricing query</option>
+                            <option value="content" selected>Content query</option>
+                            <option value="other" selected>Other query</option>
+                        </select> <br />
+
+                        <label for="query" class="form-label">Your Query</label>
+                        <textarea id="query" class="form-control" style="height: 140px"></textarea>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+</body>
